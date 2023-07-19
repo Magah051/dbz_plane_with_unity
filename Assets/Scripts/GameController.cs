@@ -81,12 +81,18 @@ public class GameController : MonoBehaviour
         if (timer <= 0)
         {
             //Timer com valor aleatório entre 1f e 3f
-            timer = Random.Range(tMax, tMax);
+            timer = Random.Range(tMax / level, tMax);
 
             posicao.y = Random.Range(posMin, posMax);
 
             //Obstaculos
             Instantiate(obstaculo, posicao, Quaternion.identity);//Deixar como está quaternion (aula 127)
         }
+    }
+
+    //Criando um método para retornar o level
+    public int RetornaLevel()
+    {
+        return level;
     }
 }

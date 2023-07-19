@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class ObstaculoController : MonoBehaviour
 {
-    [SerializeField] private float velocidade = 5f;
+    [SerializeField] private float velocidade = 4f;
     [SerializeField] private GameObject eu;
+    //Criando a varriável do game contoller
+    [SerializeField] private GameController game;
 
     // Start is called before the first frame update
     void Start()
     {
         Destroy(eu, 5f);
+
+        //Encontrando o game controller da cena atual
+        game = FindObjectOfType<GameController>();
+
+
     }
 
     // Update is called once per frame
@@ -20,5 +27,8 @@ public class ObstaculoController : MonoBehaviour
         //transform.position = transform.position + Vector3.left;
         //Quando não usamos RigdBody, precisamos usar DeltaTime.
         transform.position += Vector3.left * Time.deltaTime * velocidade;
+
+        //A minha velocidade vai ser 4f + level
+        velocidade = 4f + game.RetornaLevel();
     }
 }
