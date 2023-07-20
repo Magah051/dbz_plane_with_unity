@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
         Subir();
         //Limitando a minha velocidade queda
         LimitandoVelocidade();
+        //Morrendo ao sai da tela po cima ou por baixo
+        MorrendoAoSair();
     }
 
     private void LimitandoVelocidade()
@@ -45,6 +47,17 @@ public class PlayerController : MonoBehaviour
         {
             //Fazendo a velocidade do RB ir para cima
             meuRB.velocity = Vector2.up * velocidade;
+        }
+    }
+
+    //Reiniciando ao sair da tela
+    private void MorrendoAoSair()
+    {
+        //Checando se eu sai da tela
+        if (transform.position.y > 5.5f|| transform.position.y < -5.5f)
+        {
+            //Reiniciando o jogo
+            SceneManager.LoadScene(0);
         }
     }
 
