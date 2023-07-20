@@ -441,10 +441,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3502067176975622521, guid: cb45fc645b6e87942b636c0120ac3272, type: 3}
-      propertyPath: puff
-      value: 
-      objectReference: {fileID: 2486828803181753709, guid: 173651512103e124a8de5d4cf50b245b, type: 3}
     - target: {fileID: 6849673175289982272, guid: cb45fc645b6e87942b636c0120ac3272, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -507,6 +503,10 @@ PrefabInstance:
       value: Game
       objectReference: {fileID: 0}
     - target: {fileID: 3356951348450678550, guid: 54e1989f1b23f9940972418499d8ba97, type: 3}
+      propertyPath: tMax
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356951348450678550, guid: 54e1989f1b23f9940972418499d8ba97, type: 3}
       propertyPath: levelTexto
       value: 
       objectReference: {fileID: 432941255}
@@ -514,6 +514,10 @@ PrefabInstance:
       propertyPath: pontosTexto
       value: 
       objectReference: {fileID: 615225637}
+    - target: {fileID: 3356951348450678550, guid: 54e1989f1b23f9940972418499d8ba97, type: 3}
+      propertyPath: proximoLevel
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7471070274491163633, guid: 54e1989f1b23f9940972418499d8ba97, type: 3}
       propertyPath: m_RootOrder
       value: 2

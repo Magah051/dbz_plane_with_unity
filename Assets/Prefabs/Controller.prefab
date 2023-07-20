@@ -51,6 +51,7 @@ MonoBehaviour:
   posMax: 2.4
   tMin: 1
   tMax: 3
+  levelUp: {fileID: 8300000, guid: 1fbc787a61cae534aa298203a9a85b32, type: 3}
   pontosTexto: {fileID: 0}
   levelTexto: {fileID: 0}
   proximoLevel: 1
