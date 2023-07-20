@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour
             //Fazendo a velocidade do RB ir para cima
             meuRB.velocity = Vector2.up * velocidade;
         }
+
+        
+        
     }
 
     //Reiniciando ao sair da tela
