@@ -58,7 +58,7 @@ public class GameController : MonoBehaviour
     private void Pontos()
     {
         //Ganhando pontos
-        pontos += Time.deltaTime;
+        pontos += Time.deltaTime * level;
 
         //Passando os meus pontos para o texto dos pontos
         pontosTexto.text = Mathf.Round(pontos).ToString();
